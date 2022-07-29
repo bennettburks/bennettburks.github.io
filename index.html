@@ -1,99 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Eric and Caroline's Wedding</title>
-    <link rel="stylesheet" type="text/css" href="theme.css"> 
-    <link rel="stylesheet" type="text/css" href="./icons/css/all.min.css"> 
-    <link href="https://fonts.googleapis.com/css?family=Caveat|Quicksand&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <script>
-    // temporary, stops people from entering page
-    function password() {
-        var pw = "";
 
-        while(pw != "test"){
-          pw = prompt("Enter the password:");
-        }
-      }
+<head>
+  <meta charset="UTF-8">
+  <title>Eric and Caroline's Wedding</title>
+  <link rel="stylesheet" type="text/css" href="theme.css">
+  <link rel="stylesheet" type="text/css" href="./icons/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Caveat|Quicksand&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<script>
+  // temporary, stops people from entering page
+  function password() {
+    var pw = "";
+
+    while (pw != "test") {
+      pw = prompt("Enter the password:");
+    }
+  }
       // password();
-  </script>
-  <body>
-    <header class="header">
-      <h1 class="heading">
-        Eric and Caroline's Wedding
-        <!-- <span class="heading-subtext"> are getting married!</span> -->
-      </h1>
-    </header>
-    <a data-scroll class="fixed-button" href="#rsvp" id="rsvpButton">RSVP</a> 
-    <!-- <section class="section">
-      <h2 class="sub-heading">Overview</h2>
-      <p>[enter overview here]
-      </p>
-    </section> -->
-    <section class="section">
-      <h2 class="sub-heading">The Details</h2>
+</script>
+
+<body>
+  <header class="header">
+    <h1 class="heading">
+      Eric and Caroline's Wedding
+      <!-- <span class="heading-subtext"> are getting married!</span> -->
+    </h1>
+  </header>
+  <a data-scroll class="fixed-button" href="#rsvp" id="rsvpButton">RSVP</a>
+  <!-- desktop section -->
+  <section class="section-desktop">
+    <h2 class="sub-heading">The Details</h2>
+    <div class="details">
+      <i class="fas fa-calendar-check"></i>
+      <h3 class="details-heading">When</h3>
+      <p>September 17, 2022</p>
+      <a title="Add to Calendar" rel="noopener" href="#" target="_blank" rel="nofollow">Add to Calendar</a>
+    </div>
+    <!-- COLUMN 1 -->
+    <div class="column">
       <div class="details">
-        <i class="fas fa-calendar-check"></i>
-        <h3 class="details-heading">When</h3>
-        <p>September 17, 2022</p>
-        <a title="Add to Calendar" rel="noopener" href="#" target="_blank" rel="nofollow">Add to Calendar</a>
-      </div>
-      <div class="details">
-        <i class="fas fa-map-marked-alt"></i>
+        <i class="fas fa-ring"></i>
         <h3 class="details-heading">Ceremony Location</h3>
         <p><a rel="noopener" href="https://goo.gl/maps/DoEkGhgf1zZmhYQN8">Mayfield Cottage and Gardens</a> at 3 PM</p>
-        <p>There will be a shuttle bus to transport guests from the hotel to Mayfield Cottage and Gardens. Please be prepared for hot weather. Water and fans will be provided. Dress code is semi-formal.</p>
+        <p>There will be a shuttle bus to transport guests from the hotel to Mayfield Cottage and Gardens. Please be
+          prepared for hot weather. Water and fans will be provided. Dress code is semi-formal.</p>
+        <img class="resort-image" src="./img/mayfield_park.jpg" alt="Resort" />
+      </div>
+      <div class="details">
+        <i class="fas fa-suitcase"></i>
+        <h3 class="details-heading">Lodging</h3>
+        <p>Staybridge Suites Austin South</p>
+        <p><a
+            href="https://www.staybridge.com/redirect?path=hd&brandCode=SB&localeCode=en&regionCode=1&hotelCode=AUSYH&_PMID=99801505&GPC=BUR&cn=no&viewfullsite=true">Website</a>&nbsp;&nbsp;&nbsp;
+          <a href="https://goo.gl/maps/dhUNc8CgRsmhMEhu9">Location</a>
+        </p>
+        <p>This is the link to our hotel courtesy block. If you wish to take advantage of our discounted hotel prices,
+          please click the link and select the dates September 16th - September 18th. Select the group rate option and
+          use
+          the code BUR. You must stay two days to get the discounted rate.</p>
+        <img class="resort-image" src="./img/staybridge_suites.jpeg" alt="Resort" />
+      </div>
+      <div class="details">
+        <i class="fas fa-address-book"></i>
+        <h3 class="details-heading" id="rsvp">RSVP</h3>
+        <button class="mobile-button">Click here to RSVP!</button>
+        <iframe id="google-form"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSdJdsneQG7MHrxQaDrVgDsqJDb7ABVrcmPzmoilLB6ZRXcsXQ/viewform?embedded=true"
+          width="640" height="1255" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <!-- Include Embedded link of Google Form here in place of # -->
+        <!-- <iframe title="RSVP" src="" style="width:100%;" height="960" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+      </div>
+    </div>
+    <!-- COLUMN 2 -->
+    <div class="column2">
+      <div class="details">
+        <i class="fas fa-map-marked-alt"></i>
+        <h3 class="details-heading">Reception Location</h3>
+        <p><a rel="noopener" href="https://goo.gl/maps/TNbkDmRfCSB4ojvZ8">Onion Creek Country Club</a> at 5 PM</p>
+        <p>There will be a shuttle bus to transport guests from Mayfield Cottage and Gardens to the Onion Creek Country
+          Club. Dress code is semi-formal.</p>
+        <img class="resort-image" src="./img/onion_creek_club.jpg" alt="Resort" />
+      </div>
+      <div class="details">
+        <i class="fas fa-plane-departure"></i>
+        <h3 class="details-heading">Flights</h3>
+        <p>Austin-Bergstrom International Airport</p>
+        <p><a href="https://www.austintexas.gov/airport">Website</a>&nbsp;&nbsp;&nbsp;
+          <a href="https://goo.gl/maps/Xfz6YgAK16HMVvkZA">Location</a>
+        </p>
+        <p>Staybridge Suites Austin South is approximately 10 minutes from the airport. They offer a complimentary
+          airport
+          shuttle from 8am-4pm on weekdays, if it is requested at least 24 hrs in advance.</p>
+      </div>
+      <br>
+      <div class="details">
+        <i class="fas fa-camera"></i>
+        <h3 class="details-heading">Pictures</h3>
+        <p><a href="photos.html">Click here</a> to see pictures of us!</p>
+      </div>
+      <div class="details">
+        <i class="fas fa-gift"></i>
+        <h3 class="details-heading">Wedding Registry</h3>
+        <button class="mobile-button">Click here to see the Registry!</button>
+        <script id='script_myregistry_giftlist_iframe' type='text/javascript'
+          src='//www.myregistry.com//Visitors/GiftList/iFrames/EmbedRegistry.ashx?r=FoWi_XYNdXHgOvOA73sFKA2&v=2'>
+        </script>
+      </div>
+    </div>
+    <!-- VERTICAL LINE -->
+    <div class="vertical-line"></div>
+  </section>
+
+  <!-- mobile section -->
+  <section class="section-mobile">
+    <h2 class="sub-heading">The Details</h2>
+    <div class="details">
+      <i class="fas fa-calendar-check"></i>
+      <h3 class="details-heading">When</h3>
+      <p>September 17, 2022</p>
+      <a title="Add to Calendar" rel="noopener" href="#" target="_blank" rel="nofollow">Add to Calendar</a>
+    </div>
+
+      <div class="details">
+        <i class="fas fa-ring"></i>
+        <h3 class="details-heading">Ceremony Location</h3>
+        <p><a rel="noopener" href="https://goo.gl/maps/DoEkGhgf1zZmhYQN8">Mayfield Cottage and Gardens</a> at 3 PM</p>
+        <p>There will be a shuttle bus to transport guests from the hotel to Mayfield Cottage and Gardens. Please be
+          prepared for hot weather. Water and fans will be provided. Dress code is semi-formal.</p>
         <img class="resort-image" src="./img/mayfield_park.jpg" alt="Resort" />
       </div>
       <div class="details">
         <i class="fas fa-map-marked-alt"></i>
         <h3 class="details-heading">Reception Location</h3>
         <p><a rel="noopener" href="https://goo.gl/maps/TNbkDmRfCSB4ojvZ8">Onion Creek Country Club</a> at 5 PM</p>
-        <p>There will be a shuttle bus to transport guests from Mayfield Cottage and Gardens to the Onion Creek Country Club. Dress code is semi-formal.</p>
+        <p>There will be a shuttle bus to transport guests from Mayfield Cottage and Gardens to the Onion Creek Country
+          Club. Dress code is semi-formal.</p>
         <img class="resort-image" src="./img/onion_creek_club.jpg" alt="Resort" />
       </div>
       <div class="details">
         <i class="fas fa-suitcase"></i>
         <h3 class="details-heading">Lodging</h3>
         <p>Staybridge Suites Austin South</p>
-        <p><a href="https://www.staybridge.com/redirect?path=hd&brandCode=SB&localeCode=en&regionCode=1&hotelCode=AUSYH&_PMID=99801505&GPC=BUR&cn=no&viewfullsite=true">Website</a>&nbsp;&nbsp;&nbsp;
-          <a href="https://goo.gl/maps/dhUNc8CgRsmhMEhu9">Location</a></p>
-          <img class="resort-image" src="./img/staybridge_suites.jpeg" alt="Resort" />
-          <p>This is the link to our hotel courtesy block. If you wish to take advantage of our discounted hotel prices, please click the link and select the dates September 16th - September 18th.   Select the group rate option and use the code BUR. You must stay two days to get the discounted rate.</p>
-        </div>
+        <p><a
+            href="https://www.staybridge.com/redirect?path=hd&brandCode=SB&localeCode=en&regionCode=1&hotelCode=AUSYH&_PMID=99801505&GPC=BUR&cn=no&viewfullsite=true">Website</a>&nbsp;&nbsp;&nbsp;
+          <a href="https://goo.gl/maps/dhUNc8CgRsmhMEhu9">Location</a>
+        </p>
+        <p>This is the link to our hotel courtesy block. If you wish to take advantage of our discounted hotel prices,
+          please click the link and select the dates September 16th - September 18th. Select the group rate option and
+          use
+          the code BUR. You must stay two days to get the discounted rate.</p>
+        <img class="resort-image" src="./img/staybridge_suites.jpeg" alt="Resort" />
+      </div>
       <div class="details">
         <i class="fas fa-plane-departure"></i>
         <h3 class="details-heading">Flights</h3>
         <p>Austin-Bergstrom International Airport</p>
         <p><a href="https://www.austintexas.gov/airport">Website</a>&nbsp;&nbsp;&nbsp;
-          <a href="https://goo.gl/maps/Xfz6YgAK16HMVvkZA">Location</a></p>
-        <p>Staybridge Suites Austin South is approximately 10 minutes from the airport. They offer a complimentary airport shuttle from 8am-4pm on weekdays, if it is requested at least 24 hrs in advance.</p>
-        </div>
-      <!-- <div class="details">
-        <i class="fas fa-asterisk"></i>
-        <h3 class="details-heading">Other Notes</h3>
-        <p>[enter info here]</p>
-      </div> -->
+          <a href="https://goo.gl/maps/Xfz6YgAK16HMVvkZA">Location</a>
+        </p>
+        <p>Staybridge Suites Austin South is approximately 10 minutes from the airport. They offer a complimentary
+          airport
+          shuttle from 8am-4pm on weekdays, if it is requested at least 24 hrs in advance.</p>
+      </div>
       <div class="details">
-        <i class="fas fa-reply"></i>
+        <i class="fas fa-camera"></i>
+        <h3 class="details-heading">Pictures</h3>
+        <p><a href="photos.html">Click here</a> to see pictures of us!</p>
+      </div>
+      <div class="details">
+        <i class="fas fa-address-book"></i>
         <h3 class="details-heading" id="rsvp">RSVP</h3>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdJdsneQG7MHrxQaDrVgDsqJDb7ABVrcmPzmoilLB6ZRXcsXQ/viewform?embedded=true" width="640" height="1255" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <button class="mobile-button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSdJdsneQG7MHrxQaDrVgDsqJDb7ABVrcmPzmoilLB6ZRXcsXQ/viewform?usp=sf_link';">Click here to RSVP!</button>
+        <iframe id="google-form"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSdJdsneQG7MHrxQaDrVgDsqJDb7ABVrcmPzmoilLB6ZRXcsXQ/viewform?embedded=true"
+          width="640" height="1255" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         <!-- Include Embedded link of Google Form here in place of # -->
         <!-- <iframe title="RSVP" src="" style="width:100%;" height="960" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
       </div>
-      <script id='script_myregistry_giftlist_iframe' type='text/javascript' src='//www.myregistry.com//Visitors/GiftList/iFrames/EmbedRegistry.ashx?r=FoWi_XYNdXHgOvOA73sFKA2&v=2'></script>
-    </section>
-    <script src="./js/smooth-scroll.polyfills.min.js"></script>
-    <script defer>
-      var scroll = new SmoothScroll('a[href*="#"]');
-      var rsvpButton = document.getElementById('rsvpButton')
-      rsvpButton.addEventListener('click',hideButton,false);
+      <div class="details">
+        <i class="fas fa-gift"></i>
+        <h3 class="details-heading">Wedding Registry</h3>
+        <button class="mobile-button" onclick="location.href='https://www.myregistry.com/wedding-registry/caroline-burks-and-eric-wang-austin-tx/3398907/giftlist';">Click here to see the Registry!</button>
+        <script id='script_myregistry_giftlist_iframe' type='text/javascript'
+          src='//www.myregistry.com//Visitors/GiftList/iFrames/EmbedRegistry.ashx?r=FoWi_XYNdXHgOvOA73sFKA2&v=2'>
+        </script>
+      </div>
+      <br>
+  </section>
+  <script src="./js/smooth-scroll.polyfills.min.js"></script>
+  <script defer>
+    var scroll = new SmoothScroll('a[href*="#"]');
+    var rsvpButton = document.getElementById('rsvpButton')
+    rsvpButton.addEventListener('click', hideButton, false);
 
-      function hideButton() {
-        rsvpButton.style.display = 'none';
-      }
-    </script>
-  </body>
+    function hideButton() {
+      rsvpButton.style.display = 'none';
+    }
+  </script>
+</body>
+
 </html>

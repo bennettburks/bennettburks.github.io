@@ -5,7 +5,7 @@
 }
 html, body{
     margin: 0;
-    height: 100vh;
+    height: 100%;
     text-align: center;
 }
 .header{
@@ -19,7 +19,7 @@ html, body{
     padding-top: 60vh;
 }
 .heading {
-    color: #ffffff;
+    color: rgb(255, 255, 255);
     display: block;
     font-family: 'Caveat', cursive;
     font-size: 6em;
@@ -57,9 +57,9 @@ html, body{
 .fixed-button:hover{
     background: rgba(20,20,20,.9);
 }
-.section{
+.section-desktop .section-mobile {
     margin: 0 auto;
-    max-width: 600px;
+    /* max-width: 75vw; */
     padding: 1em 2.4em;
 }
 .sub-heading{
@@ -79,11 +79,83 @@ html, body{
     opacity: .8;
 }
 .resort-image{
-    width: 100%
+    width: 95%
 }
 
+.column, .column2 {
+    /* background-color: blue; */
+    float: left;
+    width: 35%;
+    height: 100%;
+    padding: 0.5vw;
+    margin: 0 0 0 8vw;
+}
+
+.column2 {
+    float: right;
+    margin: 0 8vw 0 0;
+}
+
+/* reference: https://www.w3schools.com/howto/howto_css_vertical_line.asp */
+.vertical-line {
+    border-left: 6px solid lightgray;
+    min-height: 160%;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.photos {
+    background-color: black;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo-flex {
+    list-style: none;
+    height: 40vh;
+    flex-grow: 1;
+}
+
+.photo-flex img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+.noa {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* do not display on desktop site */
+.section-mobile, .mobile-button {
+    display: none;
+}
+
+/* remove rsvp and requested items */
+@media only screen and (max-width: 1600px) {
+    #script_myregistry_giftlist_iframe, #google-form {
+        display: none;
+    }
+    .mobile-button {
+        display: initial;
+    }
+
+}
+
+
 @media only screen and (max-width: 600px) {
+    .header{
+        background-image: url(./img/photos/12.jpg);
+    }
     .heading {
         font-size: 4em;
     }
-  }
+    .section-desktop {display: none;}
+    .section-mobile {display: initial;}
+}
