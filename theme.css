@@ -133,7 +133,7 @@ html, body{
 }
 
 /* do not display on desktop site */
-.section-mobile, .mobile-button {
+.section-mobile {
     display: none;
 }
 
@@ -142,10 +142,6 @@ html, body{
     #script_myregistry_giftlist_iframe, #google-form {
         display: none;
     }
-    .mobile-button {
-        display: initial;
-    }
-
 }
 
 
